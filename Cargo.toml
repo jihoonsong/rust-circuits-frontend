@@ -1,0 +1,22 @@
+[package]
+name = "rust-circuits-frontend"
+version = "0.1.0"
+authors = ["Jihoon Song"]
+edition = "2021"
+rust-version = "1.56"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.87"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'Document',
+  'Element',
+  'HtmlElement',
+  'Node',
+  'Window',
+]
